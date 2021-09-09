@@ -15,4 +15,20 @@ public class TodoController : Controller
         var todos = _dbContext.Todos.ToList();
         return View(todos);
     }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Todo todo)
+    {
+        var todoId = _dbContext.Todos.Select(x => x.Id).Max() + 1;
+        todo.Id = todoId;
+        _dbContext.Todos.Add(todo);
+        _dbContext.SaveChanges();
+        return RedirectToAction("Index");
+    }
 }
