@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Todo.Models;
+using TodoMVC.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

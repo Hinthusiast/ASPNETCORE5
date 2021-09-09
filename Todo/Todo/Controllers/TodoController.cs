@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Todo.Models;
+using TodoMVC.Models;
 
-namespace Todo.Controllers;
+namespace TodoMVC.Controllers;
 public class TodoController : Controller
 {
     private readonly TodoDbContext _dbContext;

@@ -1,5 +1,5 @@
 ﻿
-namespace Todo.Models;
+namespace TodoMVC.Models;
 public class Todo
 {
     public int Id { get; set; }

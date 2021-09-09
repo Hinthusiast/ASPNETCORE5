@@ -1,5 +1,5 @@
 
-namespace Todo.Models;
+namespace TodoMVC.Models;
 public class ErrorViewModel
 {
     public string? RequestId { get; set; }

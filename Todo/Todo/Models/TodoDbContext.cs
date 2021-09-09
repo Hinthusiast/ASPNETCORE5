@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Todo.Models;
+namespace TodoMVC.Models;
 public class TodoDbContext: DbContext
 {
     public TodoDbContext(DbContextOptions<TodoDbContext> options) : base(options) { }

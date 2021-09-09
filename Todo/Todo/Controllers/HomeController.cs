@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Todo.Models;
+using TodoMVC.Models;
 
-namespace Todo.Controllers;
+namespace TodoMVC.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

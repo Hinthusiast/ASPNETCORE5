@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
 
-namespace Todo.Models;
+namespace TodoMVC.Models;
 public class TodoDbSeeder
 {
     public static void Seed(IServiceProvider serviceProvider)
