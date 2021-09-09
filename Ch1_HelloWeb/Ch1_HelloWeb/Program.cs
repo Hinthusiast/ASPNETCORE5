@@ -7,6 +7,6 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
-app.MapGet("/", () => @"<h2>The time is now:</h2>" + DateTime.UtcNow.ToString());
+app.MapGet("/", () => "<h4>The time is now:</h4>" + DateTime.UtcNow.ToString());
 
 app.Run();
