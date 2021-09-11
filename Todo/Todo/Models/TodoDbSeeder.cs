@@ -26,7 +26,7 @@ public class TodoDbSeeder
                 TaskName = "Create video content",
                 IsComplete = false
             }
-            );
+       );
         context.SaveChanges();
 
     }

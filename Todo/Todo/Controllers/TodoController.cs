@@ -46,4 +46,22 @@ public class TodoController : Controller
         _dbContext.SaveChanges();
         return RedirectToAction("Index");
     }
+
+    public IActionResult Delete(int? id)
+    {
+        var todo = _dbContext.Todos.Find(id);
+        if (todo == null)
+        {
+            return NotFound();
+        }
+        return View(todo);
+    }
+    [HttpPost]
+    public IActionResult Delete(int id)
+    {
+        var todo = _dbContext.Todos.Find(id);
+        _dbContext.Todos.Remove(todo);
+        _dbContext.SaveChanges();
+        return RedirectToAction("Index");
+    }
 }
